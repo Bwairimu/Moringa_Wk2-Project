@@ -11,4 +11,5 @@ if (hourNow > 18) {
     greeting='Welcome!';
 }
 document.write('<h4>' + greeting + '</h4>');
-document.fgColor ="#B56357";
+
+
