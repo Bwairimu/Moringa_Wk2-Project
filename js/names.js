@@ -1,19 +1,19 @@
-var mlnames = ["Kwasi", "Kwadwo", "Kwabena ", "Kwaku ", "Yaw ", "Kofi", "Kwame"];
-var flnames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua ", "Ama"];
+var mlnames = ["Kwasi", "Kwadwo", "Kwabena ", "Kwaku ", "Yaw", "Kofi", "Kwame"];
+var flnames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-function returnMLDayOfTheWeek(x) {
-    return (x < 1) || (x > 7) ? null : mlnames[x];
+function MLDayOfTheWeek(x) {
+    return (x < 1)||(x > 7) ? null : mlnames[x];
 }
-function returnFLDayOfTheWeek(x) {
-    return (x < 1) || (x > 7) ? null : flnames[x];
+function FLDayOfTheWeek(x) {
+    return (x < 1)||(x > 7) ? null : flnames[x];
 }
-function namesFunction() {
-    var genderValue;
-    if (document.getElementById("malegender").checked) {
-        genderValue = document.getElementById("malegender").value;
-    } else if (document.getElementById("femalegender")) {
+function namesGenFun(type) {
+    var genderValue=["malegender","femalegender"];
+if (document.getElementById("malegender").checked) {
+    genderValue = document.getElementById("malegender").value;
+} else if (document.getElementById("femalegender")) {
         genderValue = document.getElementById("femalegender").value;
-    }
+}
     var dateofbirth = document.getElementById("dateofbirth").value;
     var date = new Date(dateofbirth); //Enter your date here
     var date = date.getDate();

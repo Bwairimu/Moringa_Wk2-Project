@@ -63,16 +63,22 @@
                     <div class="container mt-3">
                         <form action="/action_page.php">
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                            <input type="radio" class="form-check-input" id="malegender" name="optradio" value="option1" checked>
                             <label class="form-check-label" for="radio1">Male</label>
                         </div>
                         <div class="form-check">
-                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                          <input type="radio" class="form-check-input" id="femalegender" name="optradio" value="option2">
                           <label class="form-check-label" for="radio2">Female</label>
                         </div>
-                        <button class="btn btn-danger" onsubmit="namesFunction()" type="submit">Submit form</button>
+                        <!--button class="btn btn-danger" onsubmit="namesGenFun()" type="submit">Submit form</button-->
                         </form>
                     </div>
+                    <br>
+                    <div id="namesGenFun">
+                        <div id="placeholder"></div>
+                        <input type="button" button class="btn btn-primary" value="Get male names" onclick="if (!window.__cfRLUnblockHandlers) return false; namesGenFun()" data-cf-modified-adf906d1cbcfb1633ef16d53-="" />
+                        <input type="button" button class="btn btn-danger" value="Get female names" onclick="if (!window.__cfRLUnblockHandlers) return false; namesGenFun(1)" data-cf-modified-adf906d1cbcfb1633ef16d53-="" />
+                        </div>
                     </div>
                 </div>
             </div>
