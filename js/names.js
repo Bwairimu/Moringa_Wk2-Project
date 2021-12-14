@@ -12,7 +12,7 @@ function namesGenFun(type) {
 if (document.getElementById("malegender").checked) {
     genderValue = document.getElementById("malegender").value;
 } else if (document.getElementById("femalegender")) {
-        genderValue = document.getElementById("femalegender").value;
+    genderValue = document.getElementById("femalegender").value;
 }
     var dateofbirth = document.getElementById("dateofbirth").value;
     var date = new Date(dateofbirth); //Enter your date here
