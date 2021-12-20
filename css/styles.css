@@ -1,3 +1,4 @@
+
 [type="date"] {
     background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
   }
@@ -7,22 +8,87 @@
   [type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
   }
-  
   /* custom styles */
   body {
     padding: 4em;
-    background: #0f1626;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #eae3ea;
+    font-family:monospace;
     font-size: small;
   }
-  label {
-    display: block;
-  }
-  input {
-    border: 1px solid #470606;
+  .container {
+    background-color:#470606;
     border-radius: 5px;
-    background-color: #fff;
-    padding: 3px 5px;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
-    width: 190px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 100%;
+    overflow: hidden;
   }
+  header {
+    background-color: salmon;
+  }
+  .header h2 {
+    margin: 0;
+  }
+  .form {
+    box-sizing: border-box;
+    padding: 30px 40px;
+  }
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .form-control-label {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .form-control-input {
+    border: 2px solid #470606;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+  }
+  .form-control.success input {
+    border-color: #2ecc71;
+  }
+
+  .form-control.error input {
+    border-color: #e74c3c;
+  }
+
+.form-control i {
+position: absolute;
+top: 40px;
+right: 10px;
+visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+  color:#2ecc71;
+  visibility: visible;
+
+}
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+.form button {
+  background-color: salmon;
+  border: 2px solid;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  width: 50%;
+
+}
