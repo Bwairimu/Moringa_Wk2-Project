@@ -82,52 +82,32 @@
                 <div class="col s12 m10 offset-m1 l6 offset-l3">
                     <div class="row">
                         <div class="form-group">
-                            <label for="dateOfBirth">Enter Date Of Birth:</label>
-                            <input type="text" class="form-control" id="year" placeholder="Year">
+                            <label for="dateOfBirth">Enter Date Of Birth:</label><br>
+                            <input type="text" class="form-control" id="year" placeholder="Year" required><br>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="month" placeholder="Month">
-                        </div>
+                            <input type="text" class="form-control" id="month" placeholder="Month" required><br>
+                        </div><br>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="day" placeholder="Day">
+                            <input type="text" class="form-control" id="day" placeholder="Day" required><br>
                         </div>
                         <div class="form-group">
                             <label for="gender">Select Gender:</label>
-                            <select class="form-control" id="gender" aria-placeholder="Gender" placeholder="Gender">
+                            <select class="form-control" id="gender" placeholder="Gender" required>
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
                         </div>
+                        <br>
                     </div>
                 </div>
                 <button type="submit" onclick="fetchValue()" class="btn btn-primary text-uppercase">Submit</button>
+                <br>
             </form>
         </div>
     </section>
     <!--End of Form Area-->
-    <section class="contact-us">
-        <div class="contactForm">
-            <div class="container">
-                <h6 class="title-text text-uppercase text-center">contact us</h6>
-                <div class="row">
-                    <div class="mb-3 mt-5">
-                        <form class="row g-2 needs-validation">
-                            <div class="col-md-6">
-                                <input type="name" class="form-control" id="FormControlInputValidation01"" placeholder="
-                                    Name.." required>
-                                <div class="valid-feedback">Looks good!</div>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" id="FormControlInputValidation02"
-                                    placeholder="Email.." required>
-                                <div class="invalid-feedback">Please provide a valid Email</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        
     <!--Footer Area-->
     <section class="footer-area">
         <div class="blockquote-footer text-center">

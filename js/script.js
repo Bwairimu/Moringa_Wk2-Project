@@ -1,3 +1,6 @@
+form.onclick = async (e) => {
+  e.preventDefault();
+});
 var dateOfBirth;
 dateOfBirth = window.prompt("Enter your birthday (YYYY-MM-DD)?", " ");
 var birthdayArray = dateOfBirth.split('-');
@@ -28,30 +31,45 @@ function getDayOfWeek(century,bornyear,month,day){
   console.log(dw);
   akanNames(dw,gender);
 };
-function akanNames(dw) {
-  switch (dw){
-    case 1:
-      alert("You were born on Sunday, your akan name is Kwasi");
-      break;
-    case 2:
-      alert("You were born on Monday, your akan name is Kwadwo");
-      break;
-    case 3:
-      alert("You were born on Tuesday, your akan name is Kwabena");
-      break;
-    case 4:
-      alert("You were born on Wednesday, your akan name is Kwaku");
-      break;
-    case 5:
-      alert("You were born on Thursday, your akan name is Yaw");
-      break;
-    case 6:
-      alert("You were born on Friday, your akan name is Kofi");
-      break;
-    case 7:
-      alert("You were born on Saturday, your akan name is Kwame");
-      break;
-    default:
-      alert("Oops! Try Again.");
-  };
-};
+function finalAkanNames(dw,gender) {
+  var week =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var mlAkanNames=["Kwasi","Kwadwo"," Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var flAkanNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[0] + "and your akan name is "+ mlAkanNames[0])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[0] +"and your name is " + flAkanNames[0])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[1] + "and your akan name is "+ mlAkanNames[1])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[1] +"and your name is " + flAkanNames[1])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[2] + "and your akan name is "+ mlAkanNames[2])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[2] +"and your name is " + flAkanNames[2])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[3] + "and your akan name is "+ mlAkanNames[3])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[3] +"and your name is " + flAkanNames[3])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[4] + "and your akan name is "+ mlAkanNames[4])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[4] +"and your name is " + flAkanNames[4])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " +week[5] + "and your akan name is "+ mlAkanNames[5])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[5] +"and your name is " + flAkanNames[5])
+  }
+  if (dw ==1  && gender ==="male"){
+    alert("You were born on " + week[6] + "and your akan name is "+ mlAkanNames[6])
+  }else if (dw == 1 && gender === "female"){
+    alert("You were born on " + week[6] +"and your name is " + flAkanNames[6])
+  }
+
+    //default:
+     // alert("Oops! Try Again.");

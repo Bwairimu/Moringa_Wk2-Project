@@ -13,10 +13,15 @@
   /* custom styles */
   body {
     padding: 4em;
-    background:transparent;
     font-family:'EB Garamond', serif;
     font-size:small;
   }
+  html,body{
+    margin:0%;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+}
   .container {
     background-color:#fff;
     border-radius:5px;
@@ -27,7 +32,7 @@
   }
   header{
     border-bottom: 1px solid #003153;
-    padding:20px 40px;
+    padding:20px 20px;
     display: block;
   }
   .header h2 {
