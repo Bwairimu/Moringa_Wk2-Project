@@ -1,12 +1,9 @@
 
-[type="date"] {
-    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-  }
+* {
+  box-sizing: border-box
+}
   /* import font from fonts css file */
-  @import url(./fonts.css);
-   /* import fonts*/
-  @import url(./partials/variables.css);
-
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
   [type="date"]::-webkit-inner-spin-button {
     display: none;
   }
@@ -17,12 +14,12 @@
   body {
     padding: 4em;
     background:transparent;
-    font-family:var(--Akaya_Telivigala);
+    font-family:'EB Garamond', serif;
     font-size:small;
   }
   .container {
-    background-color:transparent;
-    border-radius: 5px;
+    background-color:#fff;
+    border-radius:5px;
     color: #003153;
     overflow: hidden;
     max-width: 100%;
@@ -36,6 +33,11 @@
   .header h2 {
     margin: 0;
   }
+  h1,h2,h3{
+    font-weight: 800;
+    margin: 10px 20px;
+    padding: 10px 30px;
+  }
   .form {
     box-sizing: border-box;
     padding: 30px 40px;
@@ -47,16 +49,14 @@
     width: 100%;
     border-radius: 20%;
   }
-  .gender-form {
+  .form {
     display: inline-block;
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
-    background-color:transparent;
     border: 2px solid #355c7d;
     border-radius: 20px;
     width: 100%;
-    font-family:var(--Akaya_Telivigala);
     font-size: 20px;
     color: #003153;
   }
@@ -72,53 +72,23 @@
   .gender-form.error input {
     border-color: #e74c3c;
   }
-  .gender-form i {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    visibility: hidden;
-  }
-  .gender-form small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-  }
+  
 .form-control i {
 position: absolute;
 top: 40px;
 right: 10px;
 visibility: hidden;
 }
-.form-control.success i.fa-check-circle {
-  color:#2ecc71;
-  visibility: visible;
-}
-.form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-.form-control small {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-.form-control.error small {
-  color: #87cefa;
-  visibility: visible;
-}
-.form button {
-  background-color:#355c7d;
+.btn {
   border: 2px solid;
   content: '';
   border-radius: 20px;
   z-index: -1;
-  color: #fff;
+  color: #000;
   display: block;
   font-family: inherit;
   font-size: 14px;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 .btn btn-primary {
@@ -132,13 +102,4 @@ visibility: hidden;
  background: whitesmoke;
  background-clip: padding-box;
  color: black;
-}
-.btn btn-primary:after {
-  position: absolute;
-  top:-2px;left:-2px;
-  bottom: -2px; right: -2px;
-  background:#355c7d;
-  content: '';
-  z-index: -1;
-  border-radius:20px;
 }
