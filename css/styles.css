@@ -5,6 +5,13 @@
   /* import font from fonts css file */
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
   /* custom styles */
+  
+  @media screen and (max-width: 768px) {
+    .navbar-nav a {
+      float: none;
+      width: 100%;
+    }
+  }
   html,body {
     padding: 4em;
     font-family:'EB Garamond', serif;
