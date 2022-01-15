@@ -16,16 +16,15 @@
     <script lang="javascript" src="/js/index.js"></script>
     <title>Akan Names</title>
     <style>
-    .bg-3 {
-    background-color: #ffffff;
-    color: #bbb;
-    }
+        body {
+            background-color: #eee8aa;
+        }
     </style>
 </head>
 
 <body>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-md bg-secondary navbar-light">
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./assets/images/A_Logo.png" onClick="alert('Hi there!')"
                     class="img-circle" style="width:10%" alt="logo"></a>
@@ -50,12 +49,12 @@
             </div>
     </nav>
     <!--Showcase-->
-    <section class="bg-secondary text-dark p-5 text-center text-sm-start">
+    <section class="text-dark p-3 text-center">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <h2>
-                        <div class="text-center text-uppercase"><span>Welcome!</span></div>
+                        <span class="text-center text-uppercase">Welcome!</span>
                     </h2>
                     <p class="para"></p>
                 </div>
@@ -70,44 +69,46 @@
                     <h2 class="about-title"></h2>
                     <p class="description">Akan names are derived from Ghanian culture. Frequently in Ghana, children
                         are given their first name as a 'day name' which corresponds to the day in the week they were
-                        born. Here are Ghanian day names</p>
+                        born.</p>
                 </div>
             </div>
         </div>
     </section>
     <!--Start of form-->
     <section class="akanForm">
-        <div class="container mt-3 mb-3 bg-secondary">
+        <div class="container mt-2 mb-2 bg-secondary">
             <form class="form-group" id="form">
                 <div class="col s12 m10 offset-m1 l6 offset-l3">
                     <div class="row">
                         <div class="form-group">
-                            <label for="dateOfBirth">Enter Date Of Birth:</label><br>
-                            <input type="text" class="form-control" id="year" placeholder="Year" required><br>
+                           <h1 class="Formheader">Akan Names Form.</h1>
+                            <input type="text" class="form-control" id="year" placeholder="Year.." required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="month" placeholder="Month" required><br>
+                            <input type="text" class="form-control" id="month" placeholder="Month.." required>
                         </div><br>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="day" placeholder="Day" required><br>
+                            <input type="text" class="form-control" id="date" placeholder="Date.." required>
                         </div>
                         <div class="form-group">
                             <label for="gender">Select Gender:</label>
                             <select class="form-control" id="gender" placeholder="Gender" required>
-                                <option>Male</option>
-                                <option>Female</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
                             </select>
                         </div>
                         <br>
+                        <div class="form-group">
+                            <button onclick="fetchValue();" class="btn btn-secondary text-uppercase">Submit</button>
+                            <input type="reset" value="Reset Form" name="" class="btn btn-danger text-uppercase">
+                        </div>
                     </div>
                 </div>
-                <button type="submit" onclick="fetchValue()" class="btn btn-primary text-uppercase">Submit</button>
-                <br>
             </form>
         </div>
     </section>
     <!--End of Form Area-->
-        
+
     <!--Footer Area-->
     <section class="footer-area">
         <div class="blockquote-footer text-center">
@@ -122,5 +123,4 @@
         crossorigin="anonymous"></script>
     <script lang="javascript" src="/js/script.js"></script>
 </body>
-
 </html>
